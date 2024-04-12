@@ -458,7 +458,7 @@ future years. Please be mindful and polite when providing feedback.
 You may leave this question blank.
 
 ```{r}
-#rmarkdown::render("vignettes/HW1.Rmd"). 
+
 
 ```
 
