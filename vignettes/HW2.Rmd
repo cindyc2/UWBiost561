@@ -158,11 +158,12 @@ country_population_final <- country_population %>%
   filter(year >= 1990 & year <= 2010) %>%
   group_by(country, iso3c) %>%
   summarize(iso3c = iso3c,                                                                                            mean_population = mean(population)) %>% 
-  distinct()
+  distinct() %>%
+  arrange(iso3c)
 
 # !Obehi has other ways to use group by too!
 
-
+country_population_final
 ```
 
 
@@ -489,3 +490,4 @@ future years. Please be mindful and polite when providing feedback.
 You may leave this question blank.
 
 
+#Final Note: use rmarkdown::render("vignettes/HW2.Rmd")
