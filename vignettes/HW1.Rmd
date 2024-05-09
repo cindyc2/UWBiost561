@@ -462,3 +462,4 @@ You may leave this question blank.
 
 ```
 
+#Final Note: use rmarkdown::render("vignettes/HW1.Rmd") in console (not in Rmd)

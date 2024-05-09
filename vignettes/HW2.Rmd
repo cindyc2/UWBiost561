@@ -490,4 +490,4 @@ future years. Please be mindful and polite when providing feedback.
 You may leave this question blank.
 
 
-#Final Note: use rmarkdown::render("vignettes/HW2.Rmd")
+#Final Note: use rmarkdown::render("vignettes/HW2.Rmd") in console (not in Rmd)
