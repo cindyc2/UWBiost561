@@ -41,7 +41,8 @@ all your code should be visible in the knitted chunks.
 comparable AI tool) to what extent when completing this homework. See the syllabus
 for the course expectations.
 
-! My study group includes Gabby, Obehi, Max and Alejandro. I assume I will talk with them about this project. I don't plan to use ChatGPT, but my study group often does.  
+My study group includes Gabby, Obehi, Max and Alejandro. I assume I will talk with them about this project. I don't plan to use ChatGPT, but my study group often does.  
+Prof. Kevin helped me worked through the functions. I wound up using co-pilot for the unit tests. 
 
 
 (Note: This homework is substantially more challenging than Homework 2
@@ -277,6 +278,8 @@ Specifically, run
 the following lines. (If you are copy-pasting the following R chunk,
 remove the `eval = FALSE` tag.)
 
+! do this
+
 ```{r, eval = FALSE}
 library(UWBiost561)
 set.seed(0)
@@ -292,6 +295,8 @@ res <- UWBiost561::compute_maximal_partial_clique(
   adj_mat = adj_mat,
   alpha = 0.9
 )
+
+
 res
 ```
 
@@ -300,7 +305,6 @@ show that the output of your `compute_maximal_partial_clique()` function
 based on the adjacency matrix from `generate_partial_clique()` is "reasonable."
 
 # Q3: Developing unit tests for your functions
-
 <mark>**Intent**: The intent of this question is to give you experience
 writing unit tests inside your `UWBiost561` package.</mark>
 
@@ -336,6 +340,8 @@ Some pointers:
 Since **you** are constructing the random adjacency matrix with a partial clique
 with at least edge density of `clique_edge_density` of size `round(n*clique_fraction)`,
 then you should expect that for "simple" random adjacency matrices, your `compute_maximal_partial_clique()` can recover the partial clique that **you** constructed.
+
+!Need to do stopped here to write tests
 
 <u>**Question 3D**</u>: Run `devtools::test()` for your R package `UWBiost561`
 when you're in your R project.
