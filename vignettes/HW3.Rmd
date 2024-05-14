@@ -278,7 +278,6 @@ Specifically, run
 the following lines. (If you are copy-pasting the following R chunk,
 remove the `eval = FALSE` tag.)
 
-! do this
 
 ```{r, eval = FALSE}
 library(UWBiost561)
@@ -299,6 +298,8 @@ res <- UWBiost561::compute_maximal_partial_clique(
 
 res
 ```
+! Won't work
+
 
 This question is purposefully open-ended. Your goal is to simply 
 show that the output of your `compute_maximal_partial_clique()` function
