@@ -2,22 +2,31 @@
 % Please edit documentation in R/generate_partial_clique.R
 \name{generate_partial_clique}
 \alias{generate_partial_clique}
-\title{Generate Random Graph}
+\title{Generate Random Graph
+This package is based off of the generate random clique function.
+It simply removes 1 edge from the full clique.}
 \usage{
 generate_partial_clique(n, clique_fraction, clique_edge_density)
 }
 \arguments{
 \item{n}{the number of nodes requested in the graph (soon to be matrix)
+n = number of nodes in the graph (along the diagonal of the matrix)
+i.e. to represent this, it result in n rows and also n columns to show the connections
+and the matrix will be n*n
+n   choose this number in the function}
 
-#n= number of nodes in the graph (along the diagonol of the matrix)}
+\item{clique_fraction}{fraction of the total nodes in the graph connected in our partial clique
+clique_fraction   choose this number in the function. A fully connected clique will have clique faction =1.}
 
-\item{clique_fraction}{#fraction of nodes connected in our partial clique}
-
-\item{clique_edge_density}{edge density means how much of the clique is fully connected}
+\item{clique_edge_density}{edge density means proportion of this clique that is connected.
+A fully connected clique will have clique_edge_density = 1
+choose this number in the function}
 }
 \value{
-adj_mat # a newly-created adjacency matrix that fit the specifications given above
+adj_mat  a newly-created adjacency matrix that fit the specifications given above
 }
 \description{
 Generate Random Graph
+This package is based off of the generate random clique function.
+It simply removes 1 edge from the full clique.
 }

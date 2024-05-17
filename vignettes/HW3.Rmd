@@ -298,8 +298,6 @@ res <- UWBiost561::compute_maximal_partial_clique(
 
 res
 ```
-! Won't work
-
 
 This question is purposefully open-ended. Your goal is to simply 
 show that the output of your `compute_maximal_partial_clique()` function
@@ -314,13 +312,6 @@ Lecture 5, as well as additional walkthrough in [https://docs.google.com/documen
 that contains a `testthat.R` file (shown below) as well as `testthat` folder.
 <span style="color: blue;">(There is nothing to report for this question.)</span>
 
-```{r, eval = FALSE}
-# This is what your testthat.R file should contain
-library(testthat)
-library(UWBiost561)
-
-testthat::test_check("UWBiost561")
-```
 
 <u>**Question 3B**</u>: Write at least two unit tests for your
 `generate_partial_clique()` function inside a file called `test_generate_partial_clique.R`
@@ -342,7 +333,6 @@ Since **you** are constructing the random adjacency matrix with a partial clique
 with at least edge density of `clique_edge_density` of size `round(n*clique_fraction)`,
 then you should expect that for "simple" random adjacency matrices, your `compute_maximal_partial_clique()` can recover the partial clique that **you** constructed.
 
-!Need to do stopped here to write tests
 
 <u>**Question 3D**</u>: Run `devtools::test()` for your R package `UWBiost561`
 when you're in your R project.

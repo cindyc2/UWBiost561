@@ -1,4 +1,4 @@
-library(matrixcalc)
+#library(matrixcalc)
 
 # adj_mat <- my_results$adj_mat
 #adj_mat <- simulation$adj_mat
@@ -16,16 +16,11 @@ library(matrixcalc)
 #'  Good luck finding them because this package won't help!
 
 #'
-#' @param adj_mat # adjacency matrix to be tested when loaded into the function
-#' @param alpha # the density level of partial clique requested
+#' @param adj_mat  adjacency matrix to be tested when loaded into the function
+#' @param alpha  the density level of partial clique requested
 #'
-#' @return # a list with the clique index of the largest partial clique in the adjacency matrix, and its edge density
+#' @return  a list with the clique index of the largest partial clique in the adjacency matrix, and its edge density
 #' @export
-#'
-#' @examples
-#' my_results <- generate_partial_clique(20, 0.5, 0.1)
-#' adj_mat <- my_results$adj_mat
-#' compute_maximal_partial_clique(adj_mat = adj_mat, alpha = 1)
 
 compute_maximal_partial_clique <- function(adj_mat, alpha){
   stopifnot(isSymmetric(adj_mat) == TRUE,
@@ -37,7 +32,7 @@ compute_maximal_partial_clique <- function(adj_mat, alpha){
             (ncol(adj_mat) >= 5 & ncol(adj_mat) <= 50),
             length(alpha) ==1,
             alpha >= 0.5 & alpha <= 1)
-  if(is.diagonal.matrix(adj_mat) == TRUE){
+  if(matrixcalc::is.diagonal.matrix(adj_mat) == TRUE){
     return(list(clique_idx = 1,
                 edge_density = 1))
   }
