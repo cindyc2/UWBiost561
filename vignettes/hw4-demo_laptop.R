@@ -1,14 +1,7 @@
 set.seed(10)
 library(UWBiost561)
 
-data <- UWBiost561::generate_partial_clique(n = 10,
-                                            # can also try n=15...
-                                            # Error in UWBiost561::generate_partial_clique(n = 10) :
-                                            #   argument "clique_edge_density" is missing, with no default
-                                            clique_edge_density = 0.9,
-                                            # Error in UWBiost561::generate_partial_clique(n = 10, clique_edge_density = 0.9) :
-                                            #   argument "clique_fraction" is missing, with no default
-                                            clique_fraction = 0.5)
+data <- UWBiost561::generate_partial_clique(n = 10)
 adj_mat <- data$adj_mat
 
 imp_numbers <- 1:25
