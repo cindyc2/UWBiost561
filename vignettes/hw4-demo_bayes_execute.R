@@ -2,7 +2,8 @@ rm(list=ls())
 set.seed(10)
 library(UWBiost561)
 
-imp_numbers <- 1:25
+imp_numbers <- c(9, 16)
+  #1:25
 trials <- 5
 alpha_vec <- c(0.5, 0.95)
 
@@ -17,8 +18,9 @@ level_trial_list <- lapply(alpha_vec, function(alpha){
 
     # generate the data
     data <- UWBiost561::generate_partial_clique(n = 10,
+                                                # how do I let this change?
                                                 clique_edge_density = 0.9,
-                                                clique_fraction = 0.5)
+                                                clique_fraction = alpha)
     adj_mat <- data$adj_mat
 
     # loop over the methods for this trial
