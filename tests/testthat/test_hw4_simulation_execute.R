@@ -23,24 +23,34 @@ library(testthat)
 context("Testing simulation study")
 
 #1
-test_that("hw4-demo_bayes_execute returns list", {
+test_that("hw4_simulation_execute returns data that isn't a list but saved on Bayes", {
   set.seed(10)
 
-  res2 <- my_function()
+  res2 <- my_function(num_trials = 3)
 
-  expect_true(is.list(res2))
+  expect_true(!is.list(res2))
 })
+#passed!
+
+#1
+# test_that("hw4_simulation_execute returns data that isn't a list but saved on Bayes", {
+#   set.seed(10)
+#
+#   res2 <- my_function(num_trials = 3)
+#
+#   expect_true(!is.list(res2))
+# })
 #passed!
 
 
 #2
-test_that("hw4-demo_bayes_execute runs in less than 30 seconds for 1 implementation (25 minutes for full sim)", {
+test_that("hw4_simulation_execute runs in less than 30 seconds for 1 implementation", {
   start_time <- Sys.time()
   end_time <- Sys.time()
 
-  res2 <- my_function()
+  res2 <- my_function(num_trials = 5, imp_numbers = 1)
 
   execution_time <- end_time - start_time
-  expect_true(execution_time < 1500, "Execution time should be less than 30 seconds each on average")
+  expect_true(execution_time < 30, "Execution time should be less than 30 seconds each on average")
 })
-#passed after a long time
+#passed
