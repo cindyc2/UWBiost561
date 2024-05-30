@@ -78,7 +78,7 @@
 #'
 #' @examples
 
-my_function <- function(num_trials = 2, imp_numbers = 1) {
+my_function <- function(num_trials = 5, imp_numbers = 1:25) {
   set.seed(10)
 
   imp_numbers <- imp_numbers
