@@ -135,6 +135,8 @@ my_function <- function(num_trials = 5, imp_numbers = 1:25) {
     session_info,
     file = "~/demo_simulation.RData"
   )
+
+  level_trial_list
 }
 
 # Call the function to execute your code
