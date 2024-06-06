@@ -1,0 +1,11 @@
+pandoc: 3.1.11
+pkgdown: 2.0.9
+pkgdown_sha: ~
+articles:
+  HW4: HW4.html
+  project: project.html
+last_built: 2024-06-06T18:14Z
+urls:
+  reference: https://cindyc2.github.io/UWBiost561/reference
+  article: https://cindyc2.github.io/UWBiost561/articles
+
