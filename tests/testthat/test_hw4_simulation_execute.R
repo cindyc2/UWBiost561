@@ -26,7 +26,7 @@ context("Testing simulation study")
 test_that("hw4_simulation_execute returns data that isn't a list but saved on Bayes", {
   set.seed(10)
 
-  res2 <- my_function(num_trials = 3)
+  res2 <- my_function(num_trials = 3, imp_numbers = 1:2)
 
   expect_true(!is.list(res2))
 })
