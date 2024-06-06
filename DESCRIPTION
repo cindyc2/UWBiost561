@@ -20,3 +20,4 @@ Suggests:
   matrixcalc, 
   testthat
 VignetteBuilder: knitr
+URL: https://cindyc2.github.io/UWBiost561/
